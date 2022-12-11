@@ -8,8 +8,9 @@ describe("Login", () => {
   beforeAll(async () => {
     browser = await new Builder()
       .forBrowser("chrome")
+      .setChromeOptions(chromeOptions)
       .build();
-    browser.get("https://www.saucedemo.com/");
+    browser.get("https://magento.softwaretestingboard.com/");
   });
 
   afterAll(() => {
